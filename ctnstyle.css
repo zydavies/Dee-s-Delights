@@ -1,0 +1,170 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-family:Fantasy;
+}
+body{
+	background-repeat: no-repeat;
+	background-size:cover;
+	color: #FFFFFF;
+}
+article{
+	background-image:url(wal.webp);
+	height:100vh;
+	background-image:url('bck1.jpg');
+	background-size:cover;
+	background-position:center;
+	min-height:100px;
+}
+article h1{
+	color:black;
+	font-size:90px;
+	font-weight:800;
+	text-transform:uppercase;
+	position:absolute;
+	top:30%;
+	left:25%;
+	text-outline:black;
+}
+article h1:after{
+	content:"";
+	height:5px;
+	width:250px;
+	background-color:red;
+	display:block;
+	margin:auto; 
+}	
+.contact{
+	min-height:100vh;
+	background-color:#8f0fe;
+	padding:50px;
+	text-align:center;
+}
+.container{
+	max-width:800px;
+	margin:0 auto;
+}
+.container h1{
+	font-size:50px;
+	margin-bottom:40px;
+	color:red;
+}
+.contact-wrapper{
+	border:2px;
+	box-shadow: 13px -2px 133px -5px rgba(232,23,23,0.75);
+	border-radius:5%;
+	display:grid;
+	grid-template-columns:repeat(2, 1fr);
+	grid-gap:150px;
+	padding:30px;
+
+}
+.contact-form{
+	text-align:left;
+}
+.contact-form h4{
+	font-size:30px;
+	margin-bottom:20px;
+	color:red;
+}
+.form-group{
+	margin-top:30px;
+}
+input, textarea,button{
+	margin-top:15px;
+	margin-bottom:20px;
+	font-family:sans, serif;
+	width:100%;
+	padding:12px;
+	border:1px soft;
+	border-radius:8px;
+	background-color:white;
+	color:red;
+}
+input:focus
+textarea:focus{
+	outline:none;
+	box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+	height:auto;
+	border:1px solid;
+}
+button{
+	display:inline-block;
+	padding:12px;
+	background-color:white;
+	color:black;
+	border:1px solid;
+	cursor:pointer;
+	width:100%;
+	margin-bottom:30px;
+}
+button:hover{
+	background-color:red;
+	color:white;
+}
+.contact-info{
+	text-align:left;
+}
+.contact-info h3{
+	font-size:30px;
+	margin-bottom:20px;
+	color:red;
+}
+.contact-info p{
+	font-size:24px;
+	margin-bottom:15px;
+	color:black;
+}
+.contact-info i{
+	color:red;
+	margin-right:10px;
+}
+footer.{
+	height:10vh;
+	background-size:cover;
+	background-position:center;
+	min-height:10px;	
+}
+ul{
+	float:right;
+	list-style-type:none;
+	margin-top:30px;
+	min-height:150px;
+	font-size:20px;
+	text-decoration:bold;
+	font-family: Fantasy;
+}
+ul li{
+	display:inline-block;
+}
+ul li a{
+	text-decoration:none;
+	color:black;
+	padding:5px 20px;
+	border: 1px solid transparent;
+	transition:0.5s ease:
+}
+ul li a:hover{
+	background-color: red;
+	color: white;
+}
+ul li.active{
+	 background-color:red;
+	 color:white; 
+}
+.logo img {
+	float:left;
+	height:70px;
+	width:90px;
+	height:auto;
+}
+
+@media screen and(max-width:768px){
+	.container{
+		padding:20px;
+	}
+	.contact-wrapper{
+	grid-template-columns:1fr;
+	}
+}
